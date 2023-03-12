@@ -1,0 +1,24 @@
+.Error-Container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+
+}
+
+.Error-Message {
+    font-family: Oregano;
+    text-align: center;
+    color: white;
+    font-size: 10em;
+    width: 50%;
+    font-weight: 100;
+}
+
+.Error-Icon {
+    margin-top: 30%;
+    width: 200px;
+    position: absolute;
+}

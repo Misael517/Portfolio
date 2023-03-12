@@ -1,0 +1,17 @@
+.Projects-Article {
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.Projects-Img {
+    width: 460px;
+    border-radius: 15px;
+    margin-left: 17px;
+    transition: 250ms;
+}
+
+.Projects-Img:hover {
+    transition: 250ms;
+    scale: 1.05;
+    border: 1px solid #009E6F;
+}
