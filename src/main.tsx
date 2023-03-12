@@ -7,6 +7,7 @@ import Contact from './Pages/Contact/Contact';
 import NavError from './Components/Nav/ErrorPage/NavError';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
+
 const router = createBrowserRouter([
   {
     path: '/',

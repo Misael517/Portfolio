@@ -1,8 +1,12 @@
 import './Projects.css'
+import React, { lazy } from 'react'
 import Arrow from './Img/arrowDown.png'
 import Nav from '../../Components/Nav/Nav'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import ProjectsList from "../../Components/ProjectsList/ProjectsList"
+
+
+
 
 export default function Home() {
     return (
