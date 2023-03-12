@@ -13,7 +13,7 @@ export default function Home() {
             </header>
 
             {/* Main Body */}
-            <main className='Main-Section'>
+            <main className='Main'>
                 {/* Page Title */}
                 <div className="title-container">
                     <h1 className='Main-Title'>Welcome to my <span className="h1-Span">Porfolio</span></h1>

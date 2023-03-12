@@ -4,14 +4,15 @@
 }
 
 .Projects-Img {
-    width: 460px;
-    border-radius: 15px;
+    width: 400px;
     margin-left: 17px;
-    transition: 250ms;
+    transition: 300ms;
+    border-radius: 8px;
 }
 
 .Projects-Img:hover {
-    transition: 250ms;
-    scale: 1.05;
+    transition: 300ms;
+    scale: 1.04;
     border: 1px solid #009E6F;
+    filter: blur(2.2px);
 }

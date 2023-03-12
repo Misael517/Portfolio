@@ -1,0 +1,77 @@
+.Form-Container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Oregano;
+    font-size: 2.7rem;
+}
+
+.Form-Title {
+    margin-top: 20px;
+    font-family: Oregano;
+    color: white;
+    font-weight: 100;
+    font-size: 70px;
+    text-align: center;
+}
+
+.Field {
+    margin: 20px;
+    margin-top: 5px;
+    padding-right: 10px;
+}
+
+.label {
+    margin-right: 8px;
+    color: white;
+    display: block;
+}
+
+.small-field {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 430px;
+    height: 52px;
+    background-color: black;
+    color: white;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.big-field {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 430px;
+    height: 250px;
+    background-color: black;
+    color: white;
+    font-family: Open Sans;
+    font-size: 1.2rem;
+    padding: 8px;
+
+}
+
+.Submit-Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.Submit-btn {
+    background-color: black;
+    font-family: oregano;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    transition: 300ms;
+}
+
+.Submit-btn:hover {
+    background-color: white;
+    color: black;
+    transition: 300ms;
+}

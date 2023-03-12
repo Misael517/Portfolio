@@ -1,0 +1,37 @@
+.About-Section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.About-Container {
+    display: flex;
+    width: 1150px;
+    background-color: #009E6F;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Hello-Img {
+    width: 220px;
+    height: 70px;
+    position: Absolute;
+    margin-left: 50px;
+}
+
+.About-Img {
+    width: 600px;
+}
+
+.Text-Section {
+    margin-top: 60px;
+    margin-left: 12px;
+    padding: 9px;
+}
+
+.Text {
+    margin-top: 30px;
+    color: white;
+    font-family: Open Sans;
+    font-size: 1.72rem;
+}

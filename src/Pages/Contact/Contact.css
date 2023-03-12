@@ -1,0 +1,25 @@
+.Contact-Section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Contact-Container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    background-color: #009E6F;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Contact-Img {
+    width: 600px;
+    height: 800px;
+}
+
+.Form-Container {
+    display: flex;
+    justify-content: center;
+
+}

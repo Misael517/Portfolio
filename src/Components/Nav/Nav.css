@@ -24,7 +24,7 @@
 }
 
 .navbar ul li a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 100;
     text-decoration: none;
     color: white;
@@ -33,12 +33,20 @@
 
 .nav-btn {
     background-color: #009E6F;
-    width: 6rem;
-    height: 2.3rem;
+    width: 5.4rem;
+    height: 2.4rem;
     border-radius: 9px;
-    font-size: 1.3rem;
+    font-size: 1.65rem;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Oregano;
     position: absolute;
     margin-left: 93%;
+    transition: 300ms;
+}
+
+.nav-btn:hover {
+    transition: 300ms;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: Oregano;
 }

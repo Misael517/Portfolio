@@ -1,6 +1,6 @@
 .Profile-Img {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-image: url(./Img/ProfileImage.jpg);
     border: 2px solid #009E6F;
     border-radius: 50rem;
@@ -19,18 +19,19 @@
     margin-top: 90px;
     background-color: black;
     gap: 30px;
+
 }
 
 .Stack-Title {
     color: white;
     font-family: Open Sans;
     font-weight: 100;
-    font-size: 1.40rem;
+    font-size: 1.35rem;
     background-color: black;
 }
 
 .Icon {
-    width: 44px;
+    width: 40px;
 }
 
 .Icon-Border {

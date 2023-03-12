@@ -24,11 +24,11 @@ body {
     position: absolute;
 }
 
-.Main-Section {
+.Main {
     width: 100%;
     z-index: 1;
     position: absolute;
-    margin-top: 8%;
+    margin-top: 8.7%;
 }
 
 .Sidebar-Container {
