@@ -1,0 +1,122 @@
+.Display1-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Titilium;
+    height: 240px;
+    width: 250px;
+    clip-path: polygon(9% 0, 0 7%, 0 51%, 5% 57%, 5% 100%, 96% 100%, 100% 96%, 100% 0);
+    scale: 0.05;
+    background-color: aqua;
+}
+
+
+.Display1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Titilium;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    height: 238.5px;
+    width: 248.5px;
+    overflow: hidden;
+    padding-left: 14px;
+    clip-path: polygon(9% 0, 0 7%, 0 51%, 5% 57%, 5% 100%, 96% 100%, 100% 96%, 100% 0);
+    background-color: black;
+}
+
+
+
+.Display-btn {
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-family: Titilium;
+    transition: 300ms;
+    border: 1px solid rgb(0, 206, 221);
+    margin: 2px;
+    font-size: 1.5rem;
+}
+
+.Display-btn:hover {
+    transition: 300ms;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+
+.Pages-btn {
+    text-decoration: none;
+    background-color: aqua;
+    width: 75px;
+    height: 30px;
+    font-family: Titilium;
+    transition: 300ms;
+    margin: 2px;
+    font-size: 1.15rem;
+    border: 1px solid black;
+}
+
+.Pages-btn:hover {
+    transition: 300ms;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.Pages-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.Pages-btn:hover a {
+    color: black;
+}
+
+.Display2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Titilium;
+    scale: 0.05;
+    color: aqua;
+    height: 150px;
+    width: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+
+.Display1B-responsive {
+    display: none;
+}
+
+.Display1-responsive {
+    display: none;
+}
+
+
+@media (orientation: portrait) and (min-width: 280px) and (max-width: 1024px) {
+    .Display1-border {
+        display: none;
+    }
+
+    .Display1 {
+        display: none;
+    }
+
+    .Display1B-responsive {
+        display: flex;
+    }
+
+    .Display1-responsive {
+        display: flex;
+    }
+
+}

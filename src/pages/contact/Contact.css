@@ -1,0 +1,83 @@
+.Contact-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42.5%;
+    height: 42.5%;
+    clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+    background-color: aqua;
+    font-family: Titilium;
+    margin-left: 25%;
+}
+
+.Contact-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 99%;
+    height: 99%;
+    grid-template-rows: 29% 29% 29%;
+    clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+    background-color: black;
+}
+
+.Contact-p {
+    margin: 1em;
+    font-size: 0.9vw;
+    text-align: left;
+    color: white;
+}
+
+.Contact-Span {
+    color: Aqua;
+}
+
+.Link {
+    text-decoration: none;
+    color: white;
+}
+
+.Link:hover {
+    text-decoration: none;
+    color: rgb(193, 81, 216);
+}
+
+
+@media (orientation: portrait) and (min-width: 280px) and (max-width: 1000px) {
+    .Contact-border {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 22.5%;
+        margin-left: 25%;
+        margin-top: 30%;
+    }
+
+    .Contact-p {
+        margin: 1em;
+        font-size: 2.15vw;
+        text-align: center;
+        color: white;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width: 540px) and (max-height: 1368px) {
+    .Contact-border {
+        justify-content: center;
+        align-items: center;
+        width: 37%;
+        height: 25%;
+        margin-left: 31%;
+        margin-top: 18%;
+    }
+
+    .Contact-p {
+        margin: 1em;
+        font-size: 1.5vw;
+        text-align: center;
+        color: white;
+    }
+
+}

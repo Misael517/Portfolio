@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.nav-content-btn {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0%);
+    color: white;
+    margin: 0.65em;
+    font-family: Titilium;
+    font-size: 0.75vw;
+    border: 0;
+}
+
+.nav-content-btn:hover {
+    color: rgb(0, 206, 221);
+}
+
+.nav-resume-btn {
+    background-color: black;
+    width: 3%;
+    height: 50%;
+    font-size: 0.7vw;
+    color: white;
+    font-family: Titilium;
+    transition: 300ms;
+    border: 1px solid rgb(0, 206, 221);
+    position: absolute;
+    right: 1.2%;
+}
+
+.nav-resume-btn:hover {
+    transition: 300ms;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.name {
+    font-family: Titilium;
+    color: rgb(0, 206, 221);
+    font-size: 0.7vw;
+    font-weight: 400;
+    position: absolute;
+    left: 1.2%;
+}
+
+
+@media (orientation: portrait) and (min-width: 280px) and (max-width: 1000px) {
+    .nav-content-btn {
+        margin: 0.65em;
+        font-size: 2.6vw;
+    }
+
+    .name {
+        visibility: hidden;
+    }
+
+    .nav-resume-btn {
+        background-color: black;
+        width: 8%;
+        height: 55%;
+        font-size: 1.8vw;
+    }
+}
+
+
+@media (orientation: portrait) and (min-width: 540px) and (max-height: 1368px) {
+    .nav-content-btn {
+        margin: 0.65em;
+        font-size: 1.8vw;
+    }
+
+    .name {
+        font-size: 1.6vw;
+        visibility: visible;
+    }
+
+    .nav-resume-btn {
+        background-color: black;
+        width: 5%;
+        height: 50%;
+        font-size: 1.2vw;
+    }
+}
