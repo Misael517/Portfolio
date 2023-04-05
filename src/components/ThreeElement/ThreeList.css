@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-family: Titilium;
+    font-family: "Titillium Web";
     height: 240px;
     width: 250px;
     clip-path: polygon(9% 0, 0 7%, 0 51%, 5% 57%, 5% 100%, 96% 100%, 100% 96%, 100% 0);
@@ -17,7 +17,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Titilium;
+    font-family: "Titillium Web";
     font-size: 1rem;
     color: rgb(0, 0, 0);
     height: 238.5px;
@@ -35,7 +35,7 @@
     width: 100px;
     height: 40px;
     color: white;
-    font-family: Titilium;
+    font-family: "Titillium Web";
     transition: 300ms;
     border: 1px solid rgb(0, 206, 221);
     margin: 2px;
@@ -54,7 +54,7 @@
     background-color: aqua;
     width: 75px;
     height: 30px;
-    font-family: Titilium;
+    font-family: "Titillium Web";
     transition: 300ms;
     margin: 2px;
     font-size: 1.15rem;
@@ -81,7 +81,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Titilium;
+    font-family: "Titillium Web";
     scale: 0.05;
     color: aqua;
     height: 150px;

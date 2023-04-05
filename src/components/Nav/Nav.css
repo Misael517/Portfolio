@@ -15,7 +15,7 @@
     background-color: rgba(255, 255, 255, 0%);
     color: white;
     margin: 0.65em;
-    font-family: Titilium;
+    font-family: "Titillium Web";
     font-size: 0.75vw;
     border: 0;
 }
@@ -30,7 +30,7 @@
     height: 50%;
     font-size: 0.7vw;
     color: white;
-    font-family: Titilium;
+    font-family: "Titillium Web";
     transition: 300ms;
     border: 1px solid rgb(0, 206, 221);
     position: absolute;
@@ -44,7 +44,7 @@
 }
 
 .name {
-    font-family: Titilium;
+    font-family: "Titillium Web";
     color: rgb(0, 206, 221);
     font-size: 0.7vw;
     font-weight: 400;
