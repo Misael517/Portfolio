@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Titilium;
-  src: url(fonts/Titillium.ttf);
+  @import: url(fonts/Titillium.ttf);
 }
 
 .head {
