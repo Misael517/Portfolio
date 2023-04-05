@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Titilium;
-  @import: url(fonts/Titillium.ttf);
+  @import: url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 }
 
 .head {
