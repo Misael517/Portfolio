@@ -14,7 +14,7 @@ export function Player(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <group name="Armature_druide" scale={0.5} position={[0, -0.28, 0]}>
+        <group name="Armature_druide" scale={0.5} position={[0, -0.30, 0]}>
           <primitive object={nodes.root} />
           <skinnedMesh name="druid" geometry={nodes.druid.geometry} material={materials.color_main} skeleton={nodes.druid.skeleton} />
         </group>

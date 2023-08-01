@@ -10,7 +10,7 @@ export function PokemonAPI(props) {
   const { nodes, materials } = useGLTF('/model/PokemonAPI/PokemonAPI-transformed.glb')
   return (
     <group {...props} dispose={null}>
-      <group position={[0, -0.05, -0.1]} rotation={[-Math.PI / 2, 0, 0]} scale={0.02}>
+      <group position={[0, -0.075, -0.1]} rotation={[-Math.PI / 2, 0, 0]} scale={0.02}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.fill} scale={0.03} receiveShadow />
         <mesh geometry={nodes.Object_3.geometry} material={materials.inside} scale={0.03} castShadow />
         <mesh geometry={nodes.Object_4.geometry} material={materials.outside} scale={0.03} castShadowreceiveShadow />
