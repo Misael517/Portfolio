@@ -28,7 +28,7 @@ export default function App() {
     const audio2 = new Audio(Ping2)
     audio2.play();
 
-    audio2.volume = 0.4;
+    audio2.volume = 0.2;
 
     return () => {
       audio2.pause();

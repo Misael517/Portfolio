@@ -45,7 +45,7 @@ function ProjectsArray() {
         const audio = new Audio(Ping)
         audio.play();
 
-        audio.volume = 0.4;
+        audio.volume = 0.2;
 
         return () => {
             audio.pause();
