@@ -1,0 +1,121 @@
+.StackBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+    font-family: "Titillium Web";
+    background-color: aqua;
+    margin-left: 16%;
+}
+
+.StackBody {
+    display: flex;
+    justify-content: center;
+    width: 99.6%;
+    height: 99.6%;
+    clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+    background-color: black;
+}
+
+.StackContainer {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 30% 30% 30%;
+    background-color: black;
+    margin-top: 5.1%;
+}
+
+.LogoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.LogoImg {
+    width: 70%;
+    transition: 300ms;
+    clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+}
+
+.StackP {
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+}
+
+.LogoImg:hover {
+    scale: 1.1;
+    transition: 300ms;
+}
+
+@media (orientation: portrait) and (min-width: 280px) and (max-width: 1000px) {
+    .StackBorder {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50%;
+        margin-left: 0%;
+        margin-top: 30%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .StackBody {
+        display: flex;
+        justify-content: center;
+        width: 99.6%;
+        height: 99.6%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+        background-color: black;
+    }
+
+    .StackP {
+        display: none;
+    }
+
+    .LogoImg {
+        width: 80%;
+        transition: 300ms;
+    }
+
+    .LogoContainer {
+        margin-top: 0.1em;
+    }
+
+}
+
+@media (orientation: portrait) and (min-width: 540px) and (max-height: 1368px) {
+    .StackBorder {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50%;
+        margin-left: 0%;
+        margin-top: 25%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .StackBody {
+        display: flex;
+        justify-content: center;
+        width: 99.6%;
+        height: 99.6%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+        background-color: black;
+    }
+
+    .StackP {
+        display: none;
+    }
+
+    .LogoImg {
+        width: 65%;
+        transition: 300ms;
+    }
+}

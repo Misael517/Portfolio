@@ -1,19 +1,19 @@
-import "./Contact.css";
+import styles from "./Contact.module.css";
 import React, { memo, } from 'react';
 
 function Contact() {
     return (
-        <div className="Contact-border">
-            <div className="Contact-container">
+        <div className={styles.ContactBorder}>
+            <div className={styles.ContactContainer}>
                 <div>
-                    <p className="Contact-p">
-                        <span className="Contact-Span">#1 - First-Email:</span> rd.ketalmisael@hotmail.com
+                    <p className={styles.ContactP}>
+                        <span className={styles.ContactSpan}>#1 - First-Email:</span> rd.ketalmisael@hotmail.com
                     </p>
-                    <p className="Contact-p">
-                        <span className="Contact-Span">#2 - Second-Email:</span> MisaelCastillo517@gmail.com
+                    <p className={styles.ContactP}>
+                        <span className={styles.ContactSpan}>#2 - Second-Email:</span> MisaelCastillo517@gmail.com
                     </p>
-                    <p className="Contact-p">
-                        <span className="Contact-Span">#3 - Linkedin:</span> <a className="Link" href="https://www.linkedin.com/in/misael-castillo-25392a1a5/" target="blank">Misael-Castillo.</a>
+                    <p className={styles.ContactP}>
+                        <span className={styles.ContactSpan}>#3 - Linkedin:</span> <a className={styles.Link} href="https://www.linkedin.com/in/misael-castillo-25392a1a5/" target="blank">Misael-Castillo.</a>
                     </p>
                 </div>
             </div>

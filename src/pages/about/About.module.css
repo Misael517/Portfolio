@@ -1,0 +1,89 @@
+.AboutBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+    font-family: "Titillium Web";
+    background-color: aqua;
+    margin-left: 16%;
+}
+
+.AboutContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 99.6%;
+    height: 99.6%;
+    clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+    background-color: BLACK;
+}
+
+.AboutP {
+    margin: 1.8em;
+    font-size: 1.02vw;
+    text-align: left;
+    color: white;
+}
+
+/* mobile */
+@media (orientation: portrait) and (min-width: 280px) and (max-width: 1000px) {
+    .AboutBorder {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50%;
+        margin-left: 0%;
+        margin-top: 30%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .AboutContainer {
+        display: flex;
+        justify-content: center;
+        width: 99.6%;
+        height: 99.6%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+        background-color: black;
+    }
+
+    .AboutP {
+        margin: 1em;
+        font-size: 3.9vw;
+        text-align: left;
+        color: white;
+    }
+
+}
+
+/* Tablet */
+@media (orientation: portrait) and (min-width: 540px) and (max-height: 1368px) {
+    .AboutBorder {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 50%;
+        margin-left: 0%;
+        margin-top: 30%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+    }
+
+    .AboutContainer {
+        display: flex;
+        justify-content: center;
+        width: 99.6%;
+        height: 99.6%;
+        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+        background-color: black;
+    }
+
+    .AboutP {
+        margin: 1em;
+        font-size: 3vw;
+        text-align: left;
+        color: white;
+    }
+}

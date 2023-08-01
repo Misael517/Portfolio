@@ -17,11 +17,11 @@ function ThreeElements() {
                 {/* <OrbitControls /> */}
 
                 {/* Main Camera */}
-                <PerspectiveCamera makeDefault near={0.1} far={1000} position={[0, 0, 24]} fov={3.4} />
+                <PerspectiveCamera makeDefault near={0.1} far={100} position={[0, 0, 24]} fov={3.4} />
 
                 {/* Post Processing */}
                 <EffectComposer>
-                    <DepthOfField focusDistance={0.3} bokehScale={20} focalLength={0.01} height={512} target={[0.1, 0, 0]} />
+                    <DepthOfField focusDistance={0.3} bokehScale={7} focalLength={0.01} height={1024} target={[0.1, 0, 0]} />
                 </EffectComposer>
 
                 {/* Ambien Light */}
@@ -29,21 +29,18 @@ function ThreeElements() {
 
                 {/* Spot Light */}
                 <spotLight
-                    color={'white'}
+                    color={'aqua'}
                     position={[0, 1, 0]}
-                    distance={30}
-                    intensity={2}
+                    distance={4}
+                    intensity={5}
                     angle={0.25}
                     castShadow
-                    shadow-mapSize-width={512}
-                    shadow-mapSize-height={512}
-                    shadow-radius={10}
+                    shadow-mapSize-width={256}
+                    shadow-mapSize-height={256}
+                    shadow-radius={1}
                     shadow-bias={-0.001}
                     penumbra={0.2}
                 />
-
-                {/*Soft-Shadows */}
-                <SoftShadows />
             </group>
 
 
@@ -54,8 +51,8 @@ function ThreeElements() {
                     <spotLight
                         color={'aqua'}
                         position={[0, -0.90, 0]}
-                        distance={10}
-                        intensity={1.4}
+                        distance={1.8}
+                        intensity={0.3}
                         castShadow
                         shadow-mapSize-width={512}
                         shadow-mapSize-height={512}
@@ -84,16 +81,18 @@ function ThreeElements() {
 
 
 
+
+
             {/* Wall and Floor */}
             <group>
                 {/* Wall */}
                 <Plane position={[0, 0, -4]} rotation={[0, -0.032, 0]} scale={[4, 2, 2]} receiveShadow castShadow>
-                    <meshStandardMaterial color={'#303030'} />
+                    <meshStandardMaterial color={'black'} />
                 </Plane>
 
                 {/* Floor */}
                 <Plane position={[0, -0.71, -0.50]} rotation={[-1.59, -0, -0.032]} scale={[4, 7, 2]} receiveShadow castShadow >
-                    <meshStandardMaterial color={'black'} />
+                    <meshStandardMaterial color={'#303030'} />
                 </Plane>
             </group>
         </>

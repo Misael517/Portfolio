@@ -1,5 +1,5 @@
 import { memo } from "react";
-import './Stack.css';
+import styles from './Stack.module.css';
 import HTML5 from './Img/HTML5.png';
 import CSS3 from './Img/CSS3.png';
 import JavaScript from './Img/JavaScript.png';
@@ -22,14 +22,16 @@ const StackList = [
 
 function Stack() {
     return (
-        <div className="Stack-border">
-            <div className="Stack-container">
-                {StackList.map((stack) => {
-                    return <div key={stack.id} className="Logo-Container">
-                        <img src={stack.image} className="Logo-Img" alt={stack.alt} />
-                        <p className="Stack-p">{stack.name}</p>
-                    </div>
-                })}
+        <div className={styles.StackBorder}>
+            <div className={styles.StackBody}>
+                <div className={styles.StackContainer}>
+                    {StackList.map((stack) => {
+                        return <div key={stack.id} className={styles.LogoContainer}>
+                            <img src={stack.image} className={styles.LogoImg} alt={stack.alt} />
+                            <p className={styles.StackP}>{stack.name}</p>
+                        </div>
+                    })}
+                </div>
             </div>
         </div>
     )

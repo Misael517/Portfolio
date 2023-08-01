@@ -1,11 +1,12 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
 import React, { lazy, Suspense, useState, useEffect, } from 'react';
-import { Stats, AdaptiveDpr, } from '@react-three/drei';
+import { Stats, AdaptiveDpr, Preload } from '@react-three/drei';
 import Ping2 from '/Audio/Ping2.mp3';
+import Nav from './components/Nav/Nav'
+import { ScaleLoader } from 'react-spinners';
 
 // Lazy Imports
-const Nav = lazy(() => import('./components/Nav/Nav'));
 const StackMemo = lazy(() => import('./pages/stack/Stack'));
 const AboutMemo = lazy(() => import('./pages/about/About'));
 const ContactMemo = lazy(() => import('./pages/contact/Contact'));
@@ -21,6 +22,7 @@ const displayContent = [
 // Project Component
 export default function App() {
   const [content, setContent] = useState(0);
+
 
   useEffect(() => {
     const audio2 = new Audio(Ping2)
@@ -39,23 +41,24 @@ export default function App() {
   return (
     <div className='scene'>
       {/* Nav Component */}
-      <div className='head'>
-        <Suspense fallback={null}>
+      <Suspense fallback={
+        <div className='loading-spinner-container'>
+          <ScaleLoader color="#00CEDD" />
+        </div>
+      }>
+        <header className='header'>
           <Nav setContent={setContent} />
-        </Suspense>
-      </div>
+        </header>
 
-      {/* Main Body */}
-      <main className='Main'>
-        <Suspense fallback={null}>
-          {displayContent[content]}
-        </Suspense>
-      </main>
+        {/* Main Body */}
+        <main className='Main'>
+          <Suspense>
+            {displayContent[content]}
+          </Suspense>
+        </main>
 
-      <Suspense fallback={null}>
         <Canvas shadows={true}>
-          <Stats />
-          <AdaptiveDpr pixelated />
+          <Preload all />
           <ThreeElementsMemo />
         </Canvas>
       </Suspense>
