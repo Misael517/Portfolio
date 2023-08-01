@@ -3,9 +3,9 @@ import { Html, Float } from "@react-three/drei";
 import { useEffect, useState } from "react";
 import styles from './ThreeList.module.css';
 import { NES } from "./ThreeModels/NES";
-import { PokemonAPI } from './ThreeModels/PokemonAPI'
+import { PokemonAPI } from './ThreeModels/PokemonAPI';
 import { Player } from "./ThreeModels/Player";
-
+import { Controller } from "./ThreeModels/Controller";
 import Ping from '/Audio/Ping.mp3';
 import BackgroundMusic from '/Audio/BackgroundMusic.mp3';
 
@@ -13,7 +13,7 @@ const projectsList = [
     {
         Id: 1,
         name: 'PlayShop',
-        threeElement: <NES />,
+        threeElement: <Controller />,
         Github: 'https://github.com/Misael517/PlayShopProject',
         Website: 'https://playshop.netlify.app/'
     },
@@ -45,7 +45,7 @@ function ProjectsArray() {
         const audio = new Audio(Ping)
         audio.play();
 
-        audio.volume = 0.2;
+        audio.volume = 0.05;
 
         return () => {
             audio.pause();

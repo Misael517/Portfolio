@@ -13,8 +13,6 @@ function ThreeElements() {
         <>
             {/* Controls, Lights, and shadows */}
             <group>
-                {/* Controls */}
-                {/* <OrbitControls /> */}
 
                 {/* Main Camera */}
                 <PerspectiveCamera makeDefault near={0.1} far={100} position={[0, 0, 24]} fov={3.4} />
@@ -29,10 +27,10 @@ function ThreeElements() {
 
                 {/* Spot Light */}
                 <spotLight
-                    color={'aqua'}
+                    color={'white'}
                     position={[0, 1, 0]}
                     distance={4}
-                    intensity={5}
+                    intensity={3}
                     angle={0.25}
                     castShadow
                     shadow-mapSize-width={256}

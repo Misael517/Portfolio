@@ -50,11 +50,6 @@
     font-size: 1vw;
 }
 
-.LogoImg:hover {
-    scale: 1.1;
-    transition: 300ms;
-}
-
 @media (orientation: portrait) and (min-width: 280px) and (max-width: 1000px) {
     .StackBorder {
         justify-content: center;
