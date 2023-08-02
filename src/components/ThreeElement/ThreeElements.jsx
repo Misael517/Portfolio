@@ -33,8 +33,8 @@ function ThreeElements() {
                     intensity={3}
                     angle={0.25}
                     castShadow
-                    shadow-mapSize-width={256}
-                    shadow-mapSize-height={256}
+                    shadow-mapSize-width={512}
+                    shadow-mapSize-height={512}
                     shadow-radius={1}
                     shadow-bias={-0.001}
                     penumbra={0.2}
@@ -49,8 +49,8 @@ function ThreeElements() {
                     <spotLight
                         color={'aqua'}
                         position={[0, -0.90, 0]}
-                        distance={1.8}
-                        intensity={0.3}
+                        distance={1.9}
+                        intensity={0.5}
                         castShadow
                         shadow-mapSize-width={512}
                         shadow-mapSize-height={512}

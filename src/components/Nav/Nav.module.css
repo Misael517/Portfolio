@@ -12,13 +12,23 @@
     display: inline-block;
 }
 
+
+.name {
+    font-family: "Titillium Web";
+    color: rgb(0, 206, 221);
+    font-size: calc(0.6vw + 0.4rem);
+    font-weight: 400;
+    position: absolute;
+    left: 1.2%;
+}
+
 .navContentBtn {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0%);
     color: white;
-    margin: 0.65em;
+    padding: 0.65em;
     font-family: "Titillium Web";
-    font-size: 1.3rem;
+    font-size: calc(0.6vw + 0.4rem);
     border: 0;
 }
 
@@ -31,7 +41,7 @@
     background-color: black;
     width: 4em;
     height: 51%;
-    font-size: 1.2rem;
+    font-size: 0.7vw;
     color: white;
     font-family: "Titillium Web";
     transition: 300ms;
@@ -47,14 +57,6 @@
     cursor: pointer;
 }
 
-.name {
-    font-family: "Titillium Web";
-    color: rgb(0, 206, 221);
-    font-size: 1.28rem;
-    font-weight: 400;
-    position: absolute;
-    left: 1.2%;
-}
 
 
 
@@ -64,56 +66,29 @@
 /* Mobile Nav: */
 .navbarMobile {
     display: none;
-    width: 100%;
-    background-color: black;
-    padding: 10px;
 }
 
-.navbarMobile ul {
-    width: 100%;
-    margin-top: 1.5em;
+.NavContentMobile {
+    display: none;
 }
 
 .navBtnMobile {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0%);
-    color: white;
-    margin-top: 0.4em;
-    font-family: "Titillium Web";
-    font-size: 1.2rem;
-    border: 1px solid aqua;
-    width: 100%;
-}
-
-.navBtnMobile:hover {
-    color: rgb(0, 206, 221);
-    background-color: white;
+    display: none;
 }
 
 .nameMobile {
     display: none;
-    font-family: "Titillium Web";
-    color: rgb(0, 206, 221);
-    font-size: 1.2rem;
-    font-weight: 400;
-    position: absolute;
-    left: 7.4%;
-    margin-top: 0.1em;
 }
 
 .navIcon {
-    width: 2rem;
     display: none;
-    position: absolute;
-    right: 1.2%;
-    margin: 0.3em;
 }
 
 
 
 
 /* Phones: */
-@media (orientation: portrait) and (min-width: 280px) and (max-width: 1000px) {
+@media (min-width: 280px) and (max-width: 1000px) {
     .navbar {
         display: none;
     }
@@ -130,68 +105,256 @@
         display: none;
     }
 
+
+
+
+
+
+    .navbarMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2vw;
+        width: 100%;
+        background-color: none;
+    }
+
     .nameMobile {
         display: block;
-        font-size: 1.2rem;
+        margin-left: 5vw;
+        font-size: calc(1.5vw + 0.61rem);
+        padding-top: 0rem;
+        font-family: "Titillium Web";
+        color: rgb(0, 206, 221);
+        font-weight: 400;
+        margin-top: 0em;
     }
 
     .navIcon {
-        width: 1.8rem;
-        display: block;
-    }
-}
-
-
-@media (orientation: portrait) and (min-width: 280px) and (max-width: 360px) {
-    .nameMobile {
-        display: block;
-        font-size: 0.95rem;
-        padding-top: 0.4rem;
-        left: 3.5%;
-    }
-}
-
-
-/* Tablet: */
-@media (orientation: portrait) and (min-height: 1024px) and (max-height: 1368px) {
-    .navbar {
-        display: none;
+        display: flex;
+        aspect-ratio: 1 / 1;
+        margin-right: 5vw;
+        width: 10vw;
+        position: relative;
     }
 
-    .navContentBtn {
-        display: none;
-    }
 
-    .name {
-        display: none;
-    }
-
-    .navResumeBtn {
-        display: none;
-    }
-
-    .navbarMobile ul {
+    .NavContentMobile {
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        margin-top: 3em;
+        top: 12vw;
+        padding: 3vw;
+        position: absolute;
+        background-color: black;
+        z-index: 10;
     }
+
+
+    .NavContentMobile ul li {
+        width: 90vw;
+    }
+
 
     .navBtnMobile {
-        margin-top: .5em;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0%);
+        color: white;
+        margin-top: 0.4em;
+        height: 12vw;
         font-family: "Titillium Web";
-        font-size: 2.1rem;
+        font-size: calc(1vw + 0.75rem);
         border: 1px solid aqua;
         width: 100%;
     }
 
+    .navBtnMobile:hover {
+        color: none;
+        background-color: none;
+    }
+
+
+}
+
+
+
+
+
+/* Tablet: */
+@media (min-width: 540px) and (max-width: 1023px) {
+    .navbar {
+        display: none;
+    }
+
+    .navContentBtn {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .navResumeBtn {
+        display: none;
+    }
+
+
+
+
+    .navbarMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2vw;
+        width: 100%;
+        background-color: black;
+    }
+
     .nameMobile {
         display: block;
-        font-size: 1.8rem;
-        left: 2%;
-        margin-top: .3em;
+        margin-left: 5vw;
+        font-size: calc(1.5vw + 0.9rem);
+        padding-top: 0rem;
+        font-family: "Titillium Web";
+        color: rgb(0, 206, 221);
+        font-weight: 400;
+        margin-top: 0em;
     }
 
     .navIcon {
-        width: 3.5rem;
+        display: flex;
+        aspect-ratio: 1 / 1;
+        margin-right: 5vw;
+        width: 7vw;
+        position: relative;
+    }
+
+
+    .NavContentMobile {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 9.1vw;
+        padding: 1vw;
+        position: absolute;
+        background-color: black;
+        z-index: 10;
+    }
+
+
+    .NavContentMobile ul li {
+        width: 90vw;
+    }
+
+
+    .navBtnMobile {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0%);
+        color: white;
+        margin-top: 0.8em;
+        height: 10vw;
+        font-family: "Titillium Web";
+        font-size: calc(1.5vw + 0.9rem);
+        border: 1px solid aqua;
+        width: 100%;
+    }
+
+    .navBtnMobile:hover {
+        color: none;
+        background-color: none;
+    }
+}
+
+/* Small Screens: */
+@media (min-width: 1024px) and (max-width: 1900px) {
+    .navbar {
+        display: none;
+    }
+
+    .navContentBtn {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .navResumeBtn {
+        display: none;
+    }
+
+
+
+
+    .navbarMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0.5vw;
+        width: 100%;
+        background-color: black;
+    }
+
+    .nameMobile {
         display: block;
+        margin-left: 1vw;
+        font-size: calc(1vw + 0.5rem);
+        padding-top: 0rem;
+        font-family: "Titillium Web";
+        color: rgb(0, 206, 221);
+        font-weight: 400;
+        margin-top: 0em;
+    }
+
+    .navIcon {
+        display: flex;
+        aspect-ratio: 1 / 1;
+        margin-right: 1vw;
+        width: 3vw;
+        position: relative;
+    }
+
+
+    .NavContentMobile {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 3.5vw;
+        padding: 1vw;
+        position: absolute;
+        background-color: black;
+        z-index: 10;
+    }
+
+
+    .NavContentMobile ul li {
+        width: 90vw;
+    }
+
+
+    .navBtnMobile {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0%);
+        color: white;
+        margin-top: 0.5em;
+        height: 4vw;
+        font-family: "Titillium Web";
+        font-size: calc(1vw + 0.5rem);
+        border: 1px solid aqua;
+        width: 100%;
+    }
+
+    .navBtnMobile:hover {
+        color: none;
+        background-color: none;
     }
 }

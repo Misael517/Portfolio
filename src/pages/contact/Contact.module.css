@@ -52,11 +52,10 @@
     .ContactBorder {
         justify-content: center;
         align-items: center;
-        width: 90%;
-        height: 50%;
+        width: 80vw;
+        height: 80vw;
         margin-left: 0%;
-        margin-top: 30%;
-        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+        margin-top: 23vw;
     }
 
     .ContactContainer {
@@ -64,30 +63,29 @@
         justify-content: center;
         width: 99.6%;
         height: 99.6%;
-        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
         background-color: black;
     }
 
 
     .ContactP {
-        margin: 1em;
-        font-size: 6vw;
-        text-align: center;
+        margin: 2em;
+        font-size: 4.4vw;
+        text-align: left;
         color: white;
+        margin-left: 16%;
     }
 
 }
 
 /* Tablet */
-@media (orientation: portrait) and (min-width: 540px) and (max-height: 1368px) {
+@media (min-width: 540px) and (max-width: 1023px) {
     .ContactBorder {
         justify-content: center;
         align-items: center;
-        width: 90%;
-        height: 50%;
+        width: 55vw;
+        height: 55vw;
         margin-left: 0%;
-        margin-top: 30%;
-        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
+        margin-top: 20vw;
     }
 
     .ContactContainer {
@@ -95,14 +93,44 @@
         justify-content: center;
         width: 99.6%;
         height: 99.6%;
-        clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 0);
         background-color: black;
     }
 
     .ContactP {
         margin: 1em;
-        font-size: 6vw;
+        font-size: 3vw;
         text-align: left;
         color: white;
+        margin-left: 16%;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1900px) {
+    .ContactBorder {
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        height: 50vw;
+        max-height: 500px;
+        max-width: 500px;
+        margin-left: 0%;
+        margin-top: 12vw;
+    }
+
+    .ContactContainer {
+        display: flex;
+        justify-content: center;
+        width: 99.6%;
+        height: 99.6%;
+        background-color: black;
+    }
+
+    .ContactP {
+        margin: 1em;
+        font-size: 1.6rem;
+        text-align: left;
+        color: white;
+        margin-left: 16%;
     }
 }
