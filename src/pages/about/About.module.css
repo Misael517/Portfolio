@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 50%;
-    height: 50%;
+    width: 24vw;
+    height: 24vw;
     clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
     font-family: "Titillium Web";
     background-color: aqua;
