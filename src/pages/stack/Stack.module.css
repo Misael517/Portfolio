@@ -42,6 +42,7 @@
     width: 70%;
     transition: 300ms;
     clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
+    aspect-ratio: 1 / 1;
 }
 
 .StackP {

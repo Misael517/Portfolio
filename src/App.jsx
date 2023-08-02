@@ -1,10 +1,9 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
 import React, { lazy, Suspense, useState, useEffect, } from 'react';
-import { Stats, AdaptiveDpr, Preload } from '@react-three/drei';
+import { AdaptiveDpr, Preload, AdaptiveEvents } from '@react-three/drei';
 import Ping2 from '/Audio/Ping2.mp3';
 import { ScaleLoader } from 'react-spinners';
-import { Loader } from '@react-three/drei';
 
 // Lazy Imports
 const Nav = lazy(() => import('./components/Nav/Nav'))
@@ -80,6 +79,9 @@ export default function App() {
 
 
         <Canvas shadows={true}>
+          <AdaptiveDpr />
+          <AdaptiveEvents />
+          <Preload all />
           <ThreeElementsMemo />
         </Canvas>
 

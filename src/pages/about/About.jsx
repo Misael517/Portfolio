@@ -7,18 +7,15 @@ function About() {
             <div className={styles.AboutContainer}>
                 <div>
                     <p className={styles.AboutP}>
-                        My name is <span style={{ color: 'Aqua' }}>Misael Castillo</span>, I'm from
-                        Dominican Republic, living right now in
-                        New York.
+                        Hello, My name is <span style={{ color: 'Aqua' }}>Misael Castillo</span>, and I've been living in New York for many years.
                     </p>
                     <p className={styles.AboutP}>
-                        I like computer sciece, and many things related to the tech industry. I'm constantly focus
-                        on improving my skills as a front end developer because my spectations about myself are high.
-                        That is why I'm always open to learn new things.
+                        Sometimes I like to create environments using tools like Unreal Engine 5, Blender 3D, or another things
+                        related to design, if I'm not doing this or coding, I'm probably having a good time with some friends.
                     </p>
                     <p className={styles.AboutP}>
-                        Sometimes I practice different things like drawing, Unreal Engine 5, Blender, and another things
-                        related to design. I won't forget to mention that I'm friendly, and always complete my work.
+                        To me things like communication, collaboration,
+                        problem solving and adaptability are essential in my work environment, so I bring those when it's time to work. :)
                     </p>
                 </div>
             </div>

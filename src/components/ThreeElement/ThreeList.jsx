@@ -2,12 +2,12 @@ import { memo } from "react";
 import { Html, Float } from "@react-three/drei";
 import { useEffect, useState } from "react";
 import styles from './ThreeList.module.css';
-import { NES } from "./ThreeModels/NES";
 import { PokemonAPI } from './ThreeModels/PokemonAPI';
 import { Player } from "./ThreeModels/Player";
 import { Controller } from "./ThreeModels/Controller";
 import Ping from '/Audio/Ping.mp3';
 import BackgroundMusic from '/Audio/BackgroundMusic.mp3';
+
 
 const projectsList = [
     {

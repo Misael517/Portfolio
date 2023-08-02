@@ -24,8 +24,9 @@
 }
 
 .ContactP {
-    margin: 1em;
-    font-size: 1.6vw;
+    margin: 2vw;
+    margin-left: 19%;
+    font-size: 1.2vw;
     text-align: left;
     color: white;
 }

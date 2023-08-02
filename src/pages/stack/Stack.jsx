@@ -27,7 +27,7 @@ function Stack() {
                 <div className={styles.StackContainer}>
                     {StackList.map((stack) => {
                         return <div key={stack.id} className={styles.LogoContainer}>
-                            <img src={stack.image} className={styles.LogoImg} alt={stack.alt} />
+                            <img src={stack.image} className={styles.LogoImg} alt={stack.alt} loading="lazy" placeholder="Stack Logo" />
                             <p className={styles.StackP}>{stack.name}</p>
                         </div>
                     })}
