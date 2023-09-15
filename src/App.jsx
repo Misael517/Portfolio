@@ -1,7 +1,9 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
-import React, { lazy, Suspense, useState, useEffect, } from 'react';
-import { AdaptiveDpr, Preload, AdaptiveEvents } from '@react-three/drei';
+import React, { lazy, Suspense, useState, useEffect } from 'react';
+import ProjectsArrayMemo from './components/ThreeElement/ThreeList';
+import ThreeBackgroundMemo from './components/ThreeElement/ThreeBackground'
+import { Preload, Stats } from '@react-three/drei';
 import Ping2 from '/Audio/Ping2.mp3';
 import { ScaleLoader } from 'react-spinners';
 
@@ -24,19 +26,16 @@ const displayContent = [
 // Project Component
 export default function App() {
   const [content, setContent] = useState(0);
-  const [displayNav, setDisplayNav] = useState('flex')
-
-
+  const [displayNav, setDisplayNav] = useState('none')
 
 
 
   useEffect(() => {
 
-    setDisplayNav('flex')
-
-
+    setTimeout(() => {
+      setDisplayNav('flex')
+    }, [1000])
   }, [])
-
 
 
 
@@ -54,20 +53,13 @@ export default function App() {
   }, [content]);
 
 
+
   return (
-    <div className='scene'>
-      {/* Nav Component */}
-      <Suspense fallback={
-        <div className='loading-spinner-container'>
-          <ScaleLoader color="#00CEDD" />
-        </div>
-      }>
-
-
-
-
+    <>
+      <div className='scene1'>
+        {/* Nav Component */}
         <header className='header'>
-          <Nav setContent={setContent} displayNav={displayNav} />
+          <Nav setContent={setContent} />
         </header>
 
         {/* Main Body */}
@@ -77,15 +69,20 @@ export default function App() {
           </Suspense>
         </main>
 
-
-        <Canvas shadows={true}>
-          <AdaptiveDpr />
-          <AdaptiveEvents />
+        <Canvas shadows={true} >
           <Preload all />
+          <Stats />
           <ThreeElementsMemo />
         </Canvas>
+      </div >
 
-      </Suspense >
-    </div >
+
+      <div className='scene2'>
+        <Canvas shadows={true} >
+          <Preload all />
+          <ThreeBackgroundMemo />
+        </Canvas>
+      </div >
+    </>
   )
 }

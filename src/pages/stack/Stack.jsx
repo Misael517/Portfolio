@@ -8,8 +8,9 @@ import TypeScript from './Img/TypeScript.png';
 import Github from './Img/Github.png';
 import Git from './Img/git.png';
 import Figma from './Img/Figma.png';
+import usePreloadImages from "../../hooks/usePreloadImages";
 
-const StackList = [
+const stackList = [
     { id: 1, name: 'HTML 5', image: HTML5, alt: 'HTML5-Logo' },
     { id: 2, name: 'CSS 3', image: CSS3, alt: 'CSS3-Logo' },
     { id: 3, name: 'Java Script', image: JavaScript, alt: 'JavaScript-Logo' },
@@ -20,14 +21,30 @@ const StackList = [
     { id: 8, name: 'Figma', image: Figma, alt: 'Figma-Logo' },
 ]
 
+
+const images = [
+    HTML5,
+    CSS3,
+    JavaScript,
+    React,
+    TypeScript,
+    Github,
+    Git,
+    Figma
+]
+
+
 function Stack() {
+
+    usePreloadImages(images)
+
     return (
         <div className={styles.StackBorder}>
             <div className={styles.StackBody}>
                 <div className={styles.StackContainer}>
-                    {StackList.map((stack) => {
+                    {stackList.map((stack) => {
                         return <div key={stack.id} className={styles.LogoContainer}>
-                            <img src={stack.image} className={styles.LogoImg} alt={stack.alt} loading="lazy" placeholder="Stack Logo" />
+                            <img src={stack.image} className={styles.LogoImg} alt={stack.alt} placeholder="Stack Logo" />
                             <p className={styles.StackP}>{stack.name}</p>
                         </div>
                     })}

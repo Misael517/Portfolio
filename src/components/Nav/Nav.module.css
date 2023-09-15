@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: row;
     width: 100%;
+    height: 2.9vw;
 }
 
 .navbar ul li {
@@ -39,14 +40,15 @@
 
 .navResumeBtn {
     background-color: black;
-    width: 4em;
-    height: 51%;
+    padding: 0.1vw 0.4vw 0.1vw 0.4vw;
     font-size: 0.7vw;
     color: white;
     font-family: "Titillium Web";
     transition: 300ms;
     border: 1px solid rgb(0, 206, 221);
     position: absolute;
+    text-align: center;
+    text-decoration: none;
     right: 1.2%;
 }
 
@@ -117,6 +119,7 @@
         padding-top: 2vw;
         width: 100%;
         background-color: none;
+        position: relative;
     }
 
     .nameMobile {
@@ -135,15 +138,15 @@
         aspect-ratio: 1 / 1;
         margin-right: 5vw;
         width: 10vw;
-        position: relative;
     }
 
 
-    .NavContentMobile {
+    .navContentMobile {
+        display: none;
         justify-content: center;
         align-items: center;
         width: 100%;
-        top: 12vw;
+        top: 100%;
         padding: 3vw;
         position: absolute;
         background-color: black;
@@ -151,9 +154,11 @@
     }
 
 
-    .NavContentMobile ul li {
+    .navContentMobile ul li {
         width: 90vw;
+        list-style: none;
     }
+
 
 
     .navBtnMobile {
@@ -211,6 +216,7 @@
         padding-top: 2vw;
         width: 100%;
         background-color: black;
+        position: relative;
     }
 
     .nameMobile {
@@ -229,15 +235,14 @@
         aspect-ratio: 1 / 1;
         margin-right: 5vw;
         width: 7vw;
-        position: relative;
     }
 
 
-    .NavContentMobile {
+    .navContentMobile {
         justify-content: center;
         align-items: center;
         width: 100%;
-        top: 9.1vw;
+        top: 100%;
         padding: 1vw;
         position: absolute;
         background-color: black;
@@ -245,7 +250,7 @@
     }
 
 
-    .NavContentMobile ul li {
+    .navContentMobile ul li {
         width: 90vw;
     }
 
@@ -273,27 +278,10 @@
 
 /* Small Screens: */
 @media (min-width: 1024px) and (max-width: 1900px) {
-    .navbar {
-        display: none;
-    }
-
-    .navContentBtn {
-        display: none;
-    }
-
-    .name {
-        display: none;
-    }
-
-    .navResumeBtn {
-        display: none;
-    }
-
-
 
 
     .navbarMobile {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         padding-top: 0.5vw;
@@ -321,7 +309,7 @@
     }
 
 
-    .NavContentMobile {
+    .navContentMobile {
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -333,7 +321,7 @@
     }
 
 
-    .NavContentMobile ul li {
+    .navContentMobile ul li {
         width: 90vw;
     }
 

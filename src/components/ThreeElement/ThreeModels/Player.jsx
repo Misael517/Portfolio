@@ -12,13 +12,9 @@ export function Player(props) {
   const { actions } = useAnimations(animations, group);
 
   return (
-    <group ref={group} {...props} dispose={null}>
-      <group name="Scene">
-        <group name="Armature_druide" scale={0.5} position={[0, -0.30, 0]}>
-          <primitive object={nodes.root} />
-          <skinnedMesh name="druid" geometry={nodes.druid.geometry} material={materials.color_main} skeleton={nodes.druid.skeleton} />
-        </group>
-      </group>
+    <group name="Armature_druide" >
+      <primitive object={nodes.root} scale={0.5} position={[0, -0.30, 0]} />
+      <skinnedMesh name="druid" geometry={nodes.druid.geometry} material={materials.color_main} skeleton={nodes.druid.skeleton} />
     </group>
   )
 }

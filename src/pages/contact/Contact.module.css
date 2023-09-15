@@ -16,8 +16,8 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    width: 99.6%;
-    height: 99.6%;
+    width: 99.5%;
+    height: 99.5%;
     grid-template-rows: 29% 29% 29%;
     clip-path: polygon(0% 6%, 4% 0, 51% 0, 55% 3%, 97% 3%, 100% 6%, 100% 96%, 96% 100%, 21% 100%, 18% 97%, 4% 97%, 0 92%);
     background-color: black;
@@ -48,21 +48,21 @@
 
 
 
-@media (orientation: portrait) and (min-width: 280px) and (max-width: 1000px) {
+@media (min-width: 100px) and (max-width: 540px) {
     .ContactBorder {
         justify-content: center;
         align-items: center;
         width: 80vw;
         height: 80vw;
         margin-left: 0%;
-        margin-top: 23vw;
+        margin-bottom: 35%;
     }
 
     .ContactContainer {
         display: flex;
         justify-content: center;
-        width: 99.6%;
-        height: 99.6%;
+        width: 99.5%;
+        height: 99.5%;
         background-color: black;
     }
 
@@ -82,23 +82,25 @@
     .ContactBorder {
         justify-content: center;
         align-items: center;
-        width: 55vw;
-        height: 55vw;
+        width: 42vw;
+        height: 42vw;
         margin-left: 0%;
-        margin-top: 20vw;
+        margin-bottom: 17vw;
+        min-height: 350px;
+        min-width: 350px;
     }
 
     .ContactContainer {
         display: flex;
         justify-content: center;
-        width: 99.6%;
-        height: 99.6%;
+        width: 99.5%;
+        height: 99.5%;
         background-color: black;
     }
 
     .ContactP {
         margin: 1em;
-        font-size: 3vw;
+        font-size: max(2.5vw, 1.2rem);
         text-align: left;
         color: white;
         margin-left: 16%;
@@ -106,29 +108,29 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 1900px) {
+@media (min-width: 1024px) and (max-width: 1240px) {
     .ContactBorder {
         justify-content: center;
         align-items: center;
         width: 50vw;
         height: 50vw;
-        max-height: 500px;
-        max-width: 500px;
+        max-height: 430px;
+        max-width: 430px;
         margin-left: 0%;
-        margin-top: 12vw;
+        margin-bottom: 13vw;
     }
 
     .ContactContainer {
         display: flex;
         justify-content: center;
-        width: 99.6%;
-        height: 99.6%;
+        width: 99.5%;
+        height: 99.5%;
         background-color: black;
     }
 
     .ContactP {
         margin: 1em;
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         text-align: left;
         color: white;
         margin-left: 16%;

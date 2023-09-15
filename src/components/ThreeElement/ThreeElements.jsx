@@ -1,12 +1,8 @@
-import { memo, } from "react";
-import { OrbitControls, PerspectiveCamera, Plane, SoftShadows, } from "@react-three/drei";
-import { EffectComposer, DepthOfField, } from '@react-three/postprocessing'
+import { memo } from "react";
+import { OrbitControls, PerspectiveCamera, Plane } from "@react-three/drei";
 import ProjectsArrayMemo from './ThreeList';
 import { Pedestal } from "./ThreeModels/Pedestal";
 import { FlyingDisplay } from "./ThreeModels/FlyingDisplay";
-import { Window } from "./ThreeModels/Window";
-import { MultyDisplay } from "./ThreeModels/MultyDisplay";
-import { MultyDisplay2 } from "./ThreeModels/MultyDisplay2";
 
 function ThreeElements() {
     return (
@@ -14,13 +10,10 @@ function ThreeElements() {
             {/* Controls, Lights, and shadows */}
             <group>
 
+                {/* <OrbitControls /> */}
+
                 {/* Main Camera */}
                 <PerspectiveCamera makeDefault near={0.1} far={100} position={[0, 0, 24]} fov={3.4} />
-
-                {/* Post Processing */}
-                <EffectComposer>
-                    <DepthOfField focusDistance={0.3} bokehScale={7} focalLength={0.01} height={1024} target={[0.1, 0, 0]} />
-                </EffectComposer>
 
                 {/* Ambien Light */}
                 <ambientLight intensity={0.09} color={'white'} />
@@ -30,7 +23,7 @@ function ThreeElements() {
                     color={'white'}
                     position={[0, 1, 0]}
                     distance={4}
-                    intensity={3}
+                    intensity={3.2}
                     angle={0.25}
                     castShadow
                     shadow-mapSize-width={512}
@@ -41,7 +34,6 @@ function ThreeElements() {
                 />
             </group>
 
-
             {/* 3D Elements in the front, and HTML */}
             <group >
                 {/* Pedestal */}
@@ -50,7 +42,7 @@ function ThreeElements() {
                         color={'aqua'}
                         position={[0, -0.90, 0]}
                         distance={1.9}
-                        intensity={0.5}
+                        intensity={2}
                         castShadow
                         shadow-mapSize-width={512}
                         shadow-mapSize-height={512}
@@ -68,26 +60,8 @@ function ThreeElements() {
                 <ProjectsArrayMemo />
             </group>
 
-
-
-            {/* Decoration 3D Elements at the back */}
+            {/* Floor */}
             <group>
-                <Window />
-                <MultyDisplay />
-                <MultyDisplay2 />
-            </group>
-
-
-
-
-
-            {/* Wall and Floor */}
-            <group>
-                {/* Wall */}
-                <Plane position={[0, 0, -4]} rotation={[0, -0.032, 0]} scale={[4, 2, 2]} receiveShadow castShadow>
-                    <meshStandardMaterial color={'black'} />
-                </Plane>
-
                 {/* Floor */}
                 <Plane position={[0, -0.71, -0.50]} rotation={[-1.59, -0, -0.032]} scale={[4, 7, 2]} receiveShadow castShadow >
                     <meshStandardMaterial color={'#303030'} />

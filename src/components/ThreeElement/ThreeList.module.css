@@ -1,10 +1,19 @@
-.ProjectTitle {
-    font-size: 2rem;
+.display2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Titillium Web";
+    transform: scale(1);
     color: aqua;
-    text-align: center;
+    height: 150px;
+    width: 190px;
+    border-radius: 10px;
+    overflow: unset !important;
 }
 
-.Display1Border {
+
+.display1Border {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +22,12 @@
     height: 240px;
     width: 250px;
     clip-path: polygon(9% 0, 0 7%, 0 51%, 5% 57%, 5% 100%, 96% 100%, 100% 96%, 100% 0);
-    transform: scale(0.05);
+    transform: scale(1);
     background-color: aqua;
 }
 
 
-.Display1 {
+.display1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -34,29 +43,29 @@
     background-color: black;
 }
 
-
-
-.DisplayBtn {
-    background-color: black;
-    width: 100px;
-    height: 40px;
-    color: white;
-    font-family: "Titillium Web";
-    transition: 300ms;
-    border: 1px solid rgb(0, 206, 221);
-    margin: 2px;
-    font-size: 1.5rem;
-}
-
-.DisplayBtn:hover {
-    transition: 300ms;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+.projectTitle {
+    font-size: 2em;
+    color: aqua;
+    text-align: center;
 }
 
 
-.PagesBtn {
+
+.projecContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+
+.pagesBtn {
     text-decoration: none;
     background-color: aqua;
     width: 75px;
@@ -68,37 +77,42 @@
     border: 1px solid black;
 }
 
-.PagesBtn:hover {
+.pagesBtn:hover {
     transition: 300ms;
     background-color: white;
     cursor: pointer;
     color: rgb(0, 0, 0);
 }
 
-.PagesBtn a {
+.pagesBtn a {
     text-decoration: none;
     color: black;
 }
 
-.PagesBtn:hover a {
+.pagesBtn:hover a {
     color: black;
     cursor: pointer;
 }
 
-.Display2 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.displayBtn {
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    color: white;
     font-family: "Titillium Web";
-    transform: scale(0.05);
-    color: aqua;
-    height: 150px;
-    width: 190px;
-    border-radius: 10px;
-    overflow: hidden;
+    transition: 300ms;
+    border: 1px solid rgb(0, 206, 221);
+    margin: 2px;
+    font-size: 1.5rem;
 }
 
+.displayBtn:hover {
+    transition: 300ms;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
 
 
 
@@ -107,11 +121,11 @@
 
 
 /* Resposive */
-.Display1BResponsive {
+.display1BResponsive {
     display: none;
 }
 
-.Display1Responsive {
+.display1Responsive {
     display: none;
 }
 
@@ -119,33 +133,33 @@
 
 /* mobile: */
 @media (min-width: 280px) and (max-width: 1000px) {
-    .ProjectTitle {
+    .projectTitle {
         font-size: 45px;
         color: aqua;
         text-align: center;
     }
 
-    .Display1Border {
+    .display1Border {
         display: none;
     }
 
-    .Display1 {
+    .display1 {
         display: none;
     }
 
 
 
 
-    .Display1BResponsive {
+    .display1BResponsive {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        transform: scale(0.05);
+        transform: scale(0.92);
         background-color: none;
     }
 
-    .Display1Responsive {
+    .display1Responsive {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -157,7 +171,7 @@
         margin-bottom: 4vw;
     }
 
-    .PagesBtn {
+    .pagesBtn {
         width: 155px;
         height: 55px;
         font-family: "Titillium Web";
@@ -170,14 +184,14 @@
         margin-top: 13vw;
     }
 
-    .PagesBtn:hover {
+    .pagesBtn:hover {
         transition: 300ms;
         background-color: aqua;
         cursor: pointer;
         color: black;
     }
 
-    .PagesBtn:hover a {
+    .pagesBtn:hover a {
         color: black;
         cursor: pointer;
     }
@@ -186,7 +200,7 @@
 
 
 
-    .DisplayBtn {
+    .displayBtn {
         background-color: black;
         width: 180px;
         height: 55px;
@@ -200,7 +214,7 @@
         color: white;
     }
 
-    .DisplayBtn:hover {
+    .displayBtn:hover {
         transition: 300ms;
         background-color: black;
         color: white;
@@ -214,33 +228,34 @@
 
 /* tablet: */
 @media (min-width: 540px) and (max-width: 1023px) {
-    .ProjectTitle {
+    .projectTitle {
         font-size: 45px;
         color: aqua;
         text-align: center;
     }
 
-    .Display1Border {
+    .display1Border {
         display: none;
     }
 
-    .Display1 {
+    .display1 {
         display: none;
     }
 
 
 
 
-    .Display1BResponsive {
+    .display1BResponsive {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         transform: scale(0.05);
         background-color: none;
+        transform: scale(0.92);
     }
 
-    .Display1Responsive {
+    .display1Responsive {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -252,7 +267,7 @@
         margin-bottom: 4vw;
     }
 
-    .PagesBtn {
+    .pagesBtn {
         width: 155px;
         height: 55px;
         font-family: "Titillium Web";
@@ -265,14 +280,14 @@
         margin-top: 13vw;
     }
 
-    .PagesBtn:hover {
+    .pagesBtn:hover {
         transition: 300ms;
         background-color: aqua;
         cursor: pointer;
         color: black;
     }
 
-    .PagesBtn:hover a {
+    .pagesBtn:hover a {
         color: none;
         cursor: pointer;
     }
@@ -281,7 +296,7 @@
 
 
 
-    .DisplayBtn {
+    .displayBtn {
         background-color: black;
         width: 180px;
         height: 55px;
@@ -295,7 +310,7 @@
         color: white;
     }
 
-    .DisplayBtn:hover {
+    .displayBtn:hover {
         transition: 300ms;
         background-color: black;
         color: white;
@@ -308,34 +323,36 @@
 
 
 /* Small Screens: */
-@media (min-width: 1024px) and (max-width: 1900px) {
-    .ProjectTitle {
+@media (min-width: 1024px) and (max-width: 1740px) {
+    .projectTitle {
         font-size: 45px;
         color: aqua;
         text-align: center;
     }
 
-    .Display1Border {
+    .display1Border {
         display: none;
     }
 
-    .Display1 {
+    .display1 {
         display: none;
     }
 
 
 
 
-    .Display1BResponsive {
+    .display1BResponsive {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         transform: scale(0.05);
         background-color: none;
+        z-index: 1000;
+        transform: scale(0.92);
     }
 
-    .Display1Responsive {
+    .display1Responsive {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -345,9 +362,10 @@
         width: 500px;
         background-color: none;
         margin-bottom: 0vw;
+        z-index: 1000;
     }
 
-    .PagesBtn {
+    .pagesBtn {
         width: 155px;
         height: 55px;
         font-family: "Titillium Web";
@@ -360,14 +378,14 @@
         margin-top: 3vw;
     }
 
-    .PagesBtn:hover {
+    .pagesBtn:hover {
         transition: 300ms;
         background-color: aqua;
         cursor: pointer;
         color: black;
     }
 
-    .PagesBtn:hover a {
+    .pagesBtn:hover a {
         color: none;
         cursor: pointer;
     }
@@ -376,7 +394,7 @@
 
 
 
-    .DisplayBtn {
+    .displayBtn {
         background-color: black;
         width: 180px;
         height: 55px;
@@ -390,7 +408,7 @@
         color: white;
     }
 
-    .DisplayBtn:hover {
+    .displayBtn:hover {
         transition: 300ms;
         background-color: black;
         color: white;
