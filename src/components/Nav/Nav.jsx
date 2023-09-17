@@ -28,7 +28,7 @@ export default function Nav(props) {
 
     return (
         <>
-            <nav className={styles.navbar} style={{ display: props.displayContent }}>
+            <nav className={styles.navbar}>
                 <p className={styles.name}>Misael Castillo - <span style={{ color: 'white' }}>Font end developer</span></p>
                 <ul>
                     <li><button onClick={() => props.setContent(0)} className={styles.navContentBtn}>Home</button></li>

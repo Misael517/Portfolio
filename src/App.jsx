@@ -1,11 +1,9 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
 import React, { lazy, Suspense, useState, useEffect } from 'react';
-import ProjectsArrayMemo from './components/ThreeElement/ThreeList';
-import ThreeBackgroundMemo from './components/ThreeElement/ThreeBackground'
-import { Preload, Stats } from '@react-three/drei';
-import Ping2 from '/Audio/Ping2.mp3';
+import { Preload } from '@react-three/drei';
 import { ScaleLoader } from 'react-spinners';
+import Ping2 from '/Audio/Ping2.mp3';
 
 // Lazy Imports
 const Nav = lazy(() => import('./components/Nav/Nav'))
@@ -13,9 +11,10 @@ const StackMemo = lazy(() => import('./pages/stack/Stack'));
 const AboutMemo = lazy(() => import('./pages/about/About'));
 const ContactMemo = lazy(() => import('./pages/contact/Contact'));
 const ThreeElementsMemo = lazy(() => import('./components/ThreeElement/ThreeElements'));
+const ThreeBackgroundMemo = lazy(() => import('./components/ThreeElement/ThreeBackground'));
 
 const displayContent = [
-  ' ',
+  null,
   <StackMemo />,
   <AboutMemo />,
   <ContactMemo />,
@@ -26,17 +25,6 @@ const displayContent = [
 // Project Component
 export default function App() {
   const [content, setContent] = useState(0);
-  const [displayNav, setDisplayNav] = useState('none')
-
-
-
-  useEffect(() => {
-
-    setTimeout(() => {
-      setDisplayNav('flex')
-    }, [1000])
-  }, [])
-
 
 
   useEffect(() => {
@@ -55,12 +43,20 @@ export default function App() {
 
 
   return (
-    <>
+    <Suspense fallback={
+      <div className='loading-spinner-container'>
+        <ScaleLoader color="#00CEDD" />
+      </div>
+    }>
+
       <div className='scene1'>
         {/* Nav Component */}
         <header className='header'>
-          <Nav setContent={setContent} />
+          <Suspense>
+            <Nav setContent={setContent} />
+          </Suspense>
         </header>
+
 
         {/* Main Body */}
         <main className='Main'>
@@ -71,7 +67,6 @@ export default function App() {
 
         <Canvas shadows={true} >
           <Preload all />
-          <Stats />
           <ThreeElementsMemo />
         </Canvas>
       </div >
@@ -83,6 +78,6 @@ export default function App() {
           <ThreeBackgroundMemo />
         </Canvas>
       </div >
-    </>
+    </Suspense>
   )
 }

@@ -29,8 +29,8 @@ const projectsList = [
         Id: 3,
         name: 'DevWarrior',
         threeElement: <Player />,
-        Github: 'https://github.com/Misael517/Portfolio',
-        Website: 'https://twitter.com/home'
+        Github: '#',
+        Website: '#'
     },
 ];
 
