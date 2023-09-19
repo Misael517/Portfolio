@@ -25,13 +25,13 @@ const projectsList = [
         Website: 'https://onerepublic.netlify.app/'
     },
 
-    {
-        Id: 3,
-        name: 'DevWarrior',
-        threeElement: <Player />,
-        Github: '#',
-        Website: '#'
-    },
+    // {
+    //     Id: 3,
+    //     name: 'DevWarrior',
+    //     threeElement: <Player />,
+    //     Github: '#',
+    //     Website: '#'
+    // },
 ];
 
 
@@ -62,7 +62,7 @@ function ProjectsArray() {
     const backgroundMusic = new Audio(BackgroundMusic)
 
     const handleNext = () => {
-        if (currentProject < 2) {
+        if (currentProject < 1) {
             setCurrentProject(currentProject + 1);
         }
 
