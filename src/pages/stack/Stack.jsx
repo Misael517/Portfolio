@@ -8,6 +8,7 @@ import TypeScript from './Img/TypeScript.png';
 import Github from './Img/Github.png';
 import Git from './Img/git.png';
 import Figma from './Img/Figma.png';
+import Photoshop from './Img/Photoshop.png';
 import usePreloadImages from "../../hooks/usePreloadImages";
 
 const stackList = [
@@ -19,6 +20,7 @@ const stackList = [
     { id: 6, name: 'Github', image: Github, alt: 'Github-Logo' },
     { id: 7, name: 'Git cmd', image: Git, alt: 'Git-Logo' },
     { id: 8, name: 'Figma', image: Figma, alt: 'Figma-Logo' },
+    { id: 9, name: 'Phothoshop', image: Photoshop, alt: 'Photoshop-Logo' },
 ]
 
 
@@ -30,7 +32,8 @@ const images = [
     TypeScript,
     Github,
     Git,
-    Figma
+    Figma,
+    Photoshop
 ]
 
 

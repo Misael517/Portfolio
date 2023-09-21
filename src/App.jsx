@@ -1,9 +1,9 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
 import React, { lazy, Suspense, useState, useEffect } from 'react';
-import { Preload } from '@react-three/drei';
-import { ScaleLoader } from 'react-spinners';
+import { Preload, Loader } from '@react-three/drei';
 import Ping2 from '/Audio/Ping2.mp3';
+import { ScaleLoader } from 'react-spinners';
 
 // Lazy Imports
 const Nav = lazy(() => import('./components/Nav/Nav'))
@@ -26,7 +26,6 @@ const displayContent = [
 export default function App() {
   const [content, setContent] = useState(0);
 
-
   useEffect(() => {
     const audio2 = new Audio(Ping2)
     audio2.play();
@@ -43,20 +42,17 @@ export default function App() {
 
 
   return (
-    <Suspense fallback={
-      <div className='loading-spinner-container'>
-        <ScaleLoader color="#00CEDD" />
-      </div>
-    }>
+    <>
+      {/* Nav Component */}
+      <header className='header'>
+        <Nav setContent={setContent} />
+      </header>
 
-      <div className='scene1'>
-        {/* Nav Component */}
-        <header className='header'>
-          <Suspense>
-            <Nav setContent={setContent} />
-          </Suspense>
-        </header>
-
+      <Suspense fallback={
+        <div className='loading-spinner-container'>
+          <ScaleLoader color="#00CEDD" />
+        </div>
+      }>
 
         {/* Main Body */}
         <main className='Main'>
@@ -65,19 +61,21 @@ export default function App() {
           </Suspense>
         </main>
 
-        <Canvas shadows={true} >
-          <Preload all />
-          <ThreeElementsMemo />
-        </Canvas>
-      </div >
+        <div className='scene1'>
+          <Canvas shadows={true} >
+            <Preload all />
+            <ThreeElementsMemo />
+          </Canvas>
+        </div >
 
+        <div className='scene2'>
+          <Canvas shadows={true} >
+            <Preload all />
+            <ThreeBackgroundMemo />
+          </Canvas>
+        </div >
 
-      <div className='scene2'>
-        <Canvas shadows={true} >
-          <Preload all />
-          <ThreeBackgroundMemo />
-        </Canvas>
-      </div >
-    </Suspense>
+      </Suspense>
+    </>
   )
 }

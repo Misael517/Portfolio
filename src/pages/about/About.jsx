@@ -15,7 +15,7 @@ function About() {
                     </p>
                     <p className={styles.AboutP}>
                         To me things like communication, collaboration,
-                        problem solving and adaptability are essential in my work environment, so I bring those when it's time to work. :)
+                        problem solving and adaptability are essential in my work environment, so I bring those when it's time to work.
                     </p>
                 </div>
             </div>
