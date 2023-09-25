@@ -35,7 +35,7 @@ export default function Nav(props) {
                     <li><button onClick={() => props.setContent(2)} className={styles.navContentBtn}>About</button></li>
                     <li><button onClick={() => props.setContent(3)} className={styles.navContentBtn}>Contact</button></li>
                 </ul>
-                <a type='button' className={styles.navResumeBtn} href='https://drive.google.com/file/d/1eQxJqQV1KMr5oMTcEGabYYyvcxUGEEAG/view?usp=sharing' target='_blank'>Resume</a>
+                <a type='button' className={styles.navResumeBtn} href='https://drive.google.com/file/d/1Q7FxAu1B3lNLaXVvUqTmq2lDc2HKSO8A/view?usp=sharing' target='_blank'>Resume</a>
             </nav >
 
             {/* Mobile Nav */}
@@ -49,7 +49,7 @@ export default function Nav(props) {
                         <li><button onClick={() => { props.setContent(1); setDisplayNav('none') }} className={styles.navBtnMobile}>Stack</button></li>
                         <li><button onClick={() => { props.setContent(2); setDisplayNav('none') }} className={styles.navBtnMobile}>About</button></li>
                         <li><button onClick={() => { props.setContent(3); setDisplayNav('none') }} className={styles.navBtnMobile}>Contact</button></li>
-                        <li><a type='button' className={styles.navBtnMobile} href='https://drive.google.com/file/d/1eQxJqQV1KMr5oMTcEGabYYyvcxUGEEAG/view?usp=sharing' target='_blank'>Resume</a></li>
+                        <li><a type='button' className={styles.navBtnMobile} href='https://drive.google.com/file/d/1Q7FxAu1B3lNLaXVvUqTmq2lDc2HKSO8A/view?usp=sharing' target='_blank'>Resume</a></li>
                     </ul>
                 </div>
             </nav>

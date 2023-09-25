@@ -121,7 +121,7 @@
         width: 100%;
         background-color: none;
         position: relative;
-        z-index: 5;
+        z-index: 6;
     }
 
     .nameMobile {
@@ -219,7 +219,7 @@
         width: 100%;
         background-color: black;
         position: relative;
-        z-index: 5;
+        z-index: 6;
     }
 
     .nameMobile {
@@ -290,7 +290,7 @@
         padding-top: 0.5vw;
         width: 100%;
         background-color: black;
-        z-index: 5;
+        z-index: 6;
     }
 
     .nameMobile {

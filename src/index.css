@@ -75,7 +75,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 3;
-    position: absolute;
+    margin-top: 40%;
+    height: 60%;
     width: 100%;
   }
 }
@@ -87,7 +88,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 3;
-    position: absolute;
+    margin-top: 34%;
+    height: 60%;
     width: 100%;
   }
 }
@@ -98,8 +100,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 3;
-    position: absolute;
+    margin-top: 28%;
+    height: 60%;
     width: 100%;
   }
 }
