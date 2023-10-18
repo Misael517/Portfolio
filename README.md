@@ -1,4 +1,7 @@
-# React + Vite + React Three Fiber + React Three Drei
+# React
+- Vite
+- React Three Fiber
+- React Three Drei
 
 This is my portfolio website.
 
