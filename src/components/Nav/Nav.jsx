@@ -18,7 +18,6 @@ export default function Nav(props) {
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
 
-
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };

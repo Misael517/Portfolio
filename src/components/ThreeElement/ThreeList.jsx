@@ -3,7 +3,6 @@ import { Html, Float } from "@react-three/drei";
 import { useEffect, useState } from "react";
 import styles from './ThreeList.module.css';
 import { OneRepublic } from "./ThreeModels/Logo3d";
-import { Player } from "./ThreeModels/Player";
 import { Controller } from "./ThreeModels/Controller";
 import Ping from '/Audio/Ping.mp3';
 import BackgroundMusic from '/Audio/BackgroundMusic.mp3';
@@ -82,11 +81,23 @@ function ProjectsArray() {
             setCurrentProject(currentProject - 1);
         }
     }
+    
+
+
+// Styles to fix firefox bug
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: 2
+      };
+
 
     return (
         <>
             {/* Content structure to Display */}
-            <Html as='div' zIndexRange={[2, 2]} transform scale={0.05} className={styles.display1Border} position={[0.969, -0.04, 0]} >
+            <Html as='div' zIndexRange={[2, 2]} style={style} className={styles.display1Border} position={[0.969, -0.04, 0]} >
                 <div className={styles.display1}>
                     <div className={styles.projecContent}>
                         <h2 className={styles.projectTitle}>{projectsList[currentProject].name}</h2>
@@ -100,6 +111,13 @@ function ProjectsArray() {
                         <button className={styles.displayBtn} onClick={handleNext}>Next</button>
                     </div>
                 </div>
+            </Html >
+
+             {/* Project Number Display */}
+            < Html as='div' zIndexRange={[1, 1]}  style={style} className={styles.display2} position={[0.5837, -0.0065, 0]}>
+                <h2 style={{ fontSize: '3.9vh', }}>Project:</h2>
+
+                <h2 style={{ fontSize: '3.9vh', }}>#{projectsList[currentProject].Id}</h2>
             </Html >
 
             {/* Resposive  version: */}
@@ -117,13 +135,6 @@ function ProjectsArray() {
                         <button className={styles.displayBtn} onClick={handleNext}>Next</button>
                     </div>
                 </div>
-            </Html >
-
-            {/* Project Number Display */}
-            < Html as='div' zIndexRange={[1, 1]} transform scale={0.05} className={styles.display2} position={[0.5837, -0.0065, 0]}>
-                <h2 style={{ fontSize: '2.9rem', }}>Project:</h2>
-
-                <h2 style={{ fontSize: '2.9rem', }}>#{projectsList[currentProject].Id}</h2>
             </Html >
 
 
